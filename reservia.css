@@ -20,8 +20,10 @@ body
 }
 .content
 {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    width: auto;
 }
 p
 {
@@ -52,7 +54,7 @@ h2
 	color: black;
 	font-size: 15px;
 	font-style: normal;
-    font-weight: bold;  
+    font-weight: bold;
 }
 h3
 {
@@ -153,10 +155,28 @@ form p i
     flex-direction: row;
     align-items: center;
 }
+@media screen and (max-width: 1280px)
+{
+    #filtres
+    {   
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    }
+}
 .filtres_list
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+@media screen and (max-width: 1280px)
+{
+    .filtres_list
+    {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     list-style: none;
 }
@@ -326,85 +346,105 @@ form p i
 {
     margin-left: 10px;
 }
-.articles_activites
+#activites
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;   
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-#a h3
+#activites h2
 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#activites h3
+{
+    flex-grow: 0;
     height: 15px;
     padding-left: 10px;
 }
-#a img
+#activites img
 {
+    flex-grow: 1;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.article_activites
+.articles_activites
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;   
+}
+.colonnes_activites
 {
     display: flex;
     flex-direction: column;
 
     margin: 10px;
-    background-color: white;
+    width: 245px;
+    height: 400px; 
+}
+#vieux_port, #parc_national_des_calanques
+{
+    margin: 0px;
     border-radius: 20px;
     border: none;
     overflow: hidden;
 
-    width: 225px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     box-shadow: 0px 0px 25px -8px #000000;
 }
-.article_container
+#fort_de_pomegues
 {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+
+    height: 220px;
+    width: 100%;
+    box-shadow: 0px 0px 25px -8px #000000;
 }
-.sub_article_activites_1
+#iles_du_frioul
 {
     margin: 0px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+
+    height: 160px;
+    width: 100%;
+    box-shadow: 0px 0px 25px -8px #000000;
+}
+#notre-dame-de-la-garde
+{
+    margin: 0px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+
+    height: 150px;
+    width: 100%;
+    box-shadow: 0px 0px 25px -8px #000000;
+}
+#parc_longchamp
+{
+    margin: 0px;
+    margin-top: 15px;
     border-radius: 20px;
     border: none;
     overflow: hidden;
 
     height: 230px;
     width: 100%;
-}
-.sub_article_activites_2
-{
-    margin: 0px;
-    margin-top: 10px;
-    border-radius: 20px;
-    border: none;
-    overflow: hidden;
-
-    height: 170px;
-    width: 100%;
-}
-.sub_article_activites_3
-{
-    margin: 0px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    border: none;
-    overflow: hidden;
-
-    height: 45%;
-    width: 100%;
-}
-.sub_article_activites_4
-{
-    margin: 0px;
-    margin-top: 10px;
-    border-radius: 20px;
-    border: none;
-    overflow: hidden;
-
-    height: 55%;
-    width: 100%;
+    box-shadow: 0px 0px 25px -8px #000000;
 }
 footer
 {
