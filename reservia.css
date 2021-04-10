@@ -423,55 +423,50 @@ form p i
     height: 100%;
     box-shadow: 0px 0px 25px -8px #000000;
 }
-#fort_de_pomegues
+#fort_de_pomegues, #iles_du_frioul, #notre-dame-de-la-garde, #parc_longchamp
 {
-    display: flex;
-    flex-direction: column;
     margin: 0px;
-    margin-bottom: 15px;
     border-radius: 20px;
     border: none;
-    overflow: hidden;
-
-    height: 220px;
+    overflow: hidden; 
     width: 100%;
     box-shadow: 0px 0px 25px -8px #000000;
+}
+#fort_de_pomegues
+{
+    margin-bottom: 15px;
+    height: 220px;
+}
+#fort_de_pomegues img
+{
+    height: 50%;
 }
 #iles_du_frioul
 {
-    margin: 0px;
     margin-top: 15px;
-    border-radius: 20px;
-    border: none;
-    overflow: hidden;
-
     height: 160px;
-    width: 100%;
-    box-shadow: 0px 0px 25px -8px #000000;
+}
+#iles_du_frioul img
+{
+    height: 70%;
 }
 #notre-dame-de-la-garde
 {
-    margin: 0px;
     margin-bottom: 15px;
-    border-radius: 20px;
-    border: none;
-    overflow: hidden;
-
-    height: 150px;
-    width: 100%;
-    box-shadow: 0px 0px 25px -8px #000000;
+    height: 170px;
+}
+#notre-dame-de-la-garde img
+{
+    height: 70%;
 }
 #parc_longchamp
 {
-    margin: 0px;
     margin-top: 15px;
-    border-radius: 20px;
-    border: none;
-    overflow: hidden;
-
-    height: 230px;
-    width: 100%;
-    box-shadow: 0px 0px 25px -8px #000000;
+    height: 210px;
+}
+#parc_longchamp img
+{
+    height: 80%;
 }
 footer
 {
