@@ -15,7 +15,14 @@
 }
 body
 {
-    margin: 0;
+    margin: 15px;
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    body
+    {
+        margin: 0;
+    }
 }
 .content
 {
@@ -100,7 +107,7 @@ nav
     margin-left: 750px;
     list-style: none;
 }
-@media screen and (max-width: 1280px) and (min-width: 320px)
+@media screen and (max-width: 867px) and (min-width: 320px)
 {
     .nav_list
     {
@@ -261,13 +268,13 @@ form p i
     flex-wrap: none;
     justify-content: space-between;
 }
-@media screen and (max-width: 1280px) and (min-width: 320px)
+@media screen and (max-width: 867px) and (min-width: 320px)
 {
     .total_hebergements
     {
         display: flex;
         flex-direction: column;
-        flex-wrap: none;
+        flex-wrap: wrap;
         justify-content: flex-start;
     }
     #hebergements
@@ -288,7 +295,7 @@ form p i
 
     width: 70%;
 }
-@media screen and (max-width: 1280px) and (min-width: 320px)
+@media screen and (max-width: 867px) and (min-width: 320px)
 {
     #hebergements
     {
@@ -310,6 +317,17 @@ form p i
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    .articles_hebergements
+    {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    }
 }
 .article_hebergements
 {
@@ -363,7 +381,7 @@ form p i
     justify-content: space-around;
     align-items: space-around;
 }
-@media screen and (max-width: 1280px) and (min-width: 320px)
+@media screen and (max-width: 867px) and (min-width: 320px)
 {
     #hebergements_populaires
     {
@@ -452,14 +470,28 @@ form p i
     justify-content: space-between;
     margin: 0px;   
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 867px)
 {
     .articles_activites
     {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 0px;   
+    }
+    .colonnes_activites
+    {
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    height: 290px; 
+    }
+    #vieux_port, #parc_national_des_calanques, #fort_de_pomegues, #iles_du_frioul, #notre-dame-de-la-garde, #parc_longchamp
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 130px;
     }
 }
 .colonnes_activites
