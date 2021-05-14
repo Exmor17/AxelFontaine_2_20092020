@@ -17,13 +17,6 @@ body
 {
     margin: 15px;
 }
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    body
-    {
-        margin: 0;
-    }
-}
 .content
 {
     margin-left: 2%;
@@ -84,15 +77,6 @@ nav
     flex-direction: row;
     justify-content: space-between;
 }
-@media screen and (max-width: 600px)
-{
-    nav
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-}
 #logo
 {
     margin: 15px;
@@ -107,19 +91,6 @@ nav
     margin-left: 750px;
     list-style: none;
 }
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    .nav_list
-    {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    }
-}
-
 .nav_list li 
 {
     font-size: 12px;
@@ -195,31 +166,12 @@ form p i
     flex-direction: row;
     align-items: center;
 }
-@media screen and (max-width: 1280px) and (min-width: 320px)
-{
-    #filtres
-    {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-}
 .filtres_list
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-}
-@media screen and (max-width: 600px)
-{
-    .filtres_list
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
-    }
 }
 .filtres_list i
 {
@@ -268,24 +220,6 @@ form p i
     flex-wrap: none;
     justify-content: space-between;
 }
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    .total_hebergements
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    #hebergements
-    {
-        order: 2;
-    }
-    #hebergements_populaires
-    {
-        order: 1;
-    }
-}
 #hebergements
 {
     background-color: #F2F2F2;
@@ -294,17 +228,6 @@ form p i
     margin-right: 10px;
 
     width: 70%;
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    #hebergements
-    {
-    background-color: white;
-    border-radius: 0px;
-    padding: 10px; 
-    margin: 0;
-    width: 100%;
-    }
 }
 #hebergements h2
 {
@@ -317,17 +240,6 @@ form p i
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    .articles_hebergements
-    {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    }
 }
 .article_hebergements
 {
@@ -380,19 +292,6 @@ form p i
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: space-around;
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    #hebergements_populaires
-    {
-    align-items: center;
-    background-color: #F2F2F2;
-    border-radius: 0;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-    width: 100%;
-    }
 }
 #hebergements_populaires h2
 {
@@ -469,30 +368,6 @@ form p i
     flex-direction: row;
     justify-content: space-between;
     margin: 0px;   
-}
-@media screen and (max-width: 867px)
-{
-    .articles_activites
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;   
-    }
-    .colonnes_activites
-    {
-    display: flex;
-    flex-direction: column;
-    width: 245px;
-    height: 290px; 
-    }
-    #vieux_port, #parc_national_des_calanques, #fort_de_pomegues, #iles_du_frioul, #notre-dame-de-la-garde, #parc_longchamp
-    {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        height: 130px;
-    }
 }
 .colonnes_activites
 {
@@ -595,4 +470,128 @@ footer
 .nav_footer ul li
 {
     padding: 5px;
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    body
+    {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    nav
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    .nav_list
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+}
+@media screen and (max-width: 1280px) and (min-width: 320px)
+{
+    #filtres
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .filtres_list
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    }
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    .total_hebergements
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #hebergements
+    {
+        order: 2;
+    }
+    #hebergements_populaires
+    {
+        order: 1;
+    }
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    #hebergements
+    {
+    background-color: white;
+    border-radius: 0px;
+    padding: 10px; 
+    margin: 0;
+    width: 100%;
+    }
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    .articles_hebergements
+    {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+@media screen and (max-width: 867px) and (min-width: 320px)
+{
+    #hebergements_populaires
+    {
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    }
+}
+@media screen and (max-width: 867px)
+{
+    .articles_activites
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;   
+    }
+    .colonnes_activites
+    {
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    height: 290px; 
+    }
+    #vieux_port, #parc_national_des_calanques, #fort_de_pomegues, #iles_du_frioul, #notre-dame-de-la-garde, #parc_longchamp
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 130px;
+    }
 }
