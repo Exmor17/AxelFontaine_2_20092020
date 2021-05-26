@@ -79,16 +79,16 @@ nav
 }
 #logo
 {
-    margin: 15px;
-    padding-top: 10px;
+    margin-left: 10px;
+    margin-top:  15px;
 }
 .nav_list
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-    margin-left: 750px;
+    align-items: center;
+    margin:  auto;
     list-style: none;
 }
 .nav_list li 
@@ -96,13 +96,10 @@ nav
     font-size: 12px;
     text-decoration: none;
     font-style: normal;
-
-
     padding-top: 35px;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: -17px;
 }
 .nav_list li:hover
 {
@@ -110,21 +107,15 @@ nav
     border-top: 4px solid rgb(0, 101, 252);
     padding-top: 30px;   
 }
-nav div .inscription
+.inscription
 {
     font-size: 12px;
     font-weight: bold;
     color: rgb(0, 101, 252);
     text-decoration: none;
     font-style: normal;
-
-
-    padding-top: 51px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: -17px;
-    margin-bottom: 0px;s
+    align-self: center;
+    margin-top: 15px;
 }
 form p i
 {
@@ -280,18 +271,18 @@ form p i
 }
 #hebergements_populaires
 {
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 10px;
     padding: 10px;
 
-    width: 30%;
-   
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: space-around;
+    width: 30%; 
 }
 #hebergements_populaires h2
 {
@@ -433,9 +424,138 @@ footer
     flex-direction: row;
     justify-content: flex-start;
 }
-@media screen and (max-width: 600px)
+
+@media screen and (max-width: 867px)
 {
-   footer
+    body
+    {
+        margin: 0;
+    }
+    h1
+    {
+        margin-left:  10px;
+        margin-right: 10px;
+    }
+    .content
+    {
+    margin: 0px;
+    width: auto;
+    }
+    nav
+    {
+        flex-wrap:  wrap;
+    }
+    .nav_list
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    order:  3;
+    }
+    .nav_list li 
+{
+    font-size: 12px;
+    text-decoration: none;
+    font-style: normal;
+    justify-content: center;
+    padding: 35px 0 15px 0;
+    width: 50%;
+    border-bottom: solid #F2F2F2 4px;
+}
+.inscription
+{
+    order:  2;
+    margin-right:  10px;
+}
+    #filtres
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .filtres_list
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    }
+    .total_hebergements
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #hebergements
+    {
+        order: 2;
+    }
+    #hebergements_populaires
+    {
+        order: 1;
+    }
+    #hebergements
+    {
+    background-color: white;
+    border-radius: 0px;
+    padding: 0px; 
+    margin: 0;
+    width: 100%;
+    }
+    .articles_hebergements
+    {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+  #hebergements_populaires
+    {
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    }
+    .articles_activites
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;   
+    }
+    .colonnes_activites
+    {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 430px;
+    margin: 0px;
+    width: 85%;
+    max-width: 300px;
+    }
+    .colonnes_activites:nth-child(1), .colonnes_activites:nth-child(3)
+    {
+        height: 200px;
+    }
+    #vieux_port, #parc_national_des_calanques, #fort_de_pomegues, #iles_du_frioul, #notre-dame-de-la-garde, #parc_longchamp
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 200px;
+    }
+    footer
    {
     display: flex;
     flex-direction: column;
@@ -471,127 +591,4 @@ footer
 {
     padding: 5px;
 }
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    body
-    {
-        margin: 0;
-    }
-}
-@media screen and (max-width: 600px)
-{
-    nav
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    .nav_list
-    {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    }
-}
-@media screen and (max-width: 1280px) and (min-width: 320px)
-{
-    #filtres
-    {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-}
-@media screen and (max-width: 600px)
-{
-    .filtres_list
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
-    }
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    .total_hebergements
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    #hebergements
-    {
-        order: 2;
-    }
-    #hebergements_populaires
-    {
-        order: 1;
-    }
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    #hebergements
-    {
-    background-color: white;
-    border-radius: 0px;
-    padding: 10px; 
-    margin: 0;
-    width: 100%;
-    }
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    .articles_hebergements
-    {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    }
-}
-@media screen and (max-width: 867px) and (min-width: 320px)
-{
-    #hebergements_populaires
-    {
-    align-items: center;
-    background-color: #F2F2F2;
-    border-radius: 0;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-    width: 100%;
-    }
-}
-@media screen and (max-width: 867px)
-{
-    .articles_activites
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;   
-    }
-    .colonnes_activites
-    {
-    display: flex;
-    flex-direction: column;
-    width: 245px;
-    height: 290px; 
-    }
-    #vieux_port, #parc_national_des_calanques, #fort_de_pomegues, #iles_du_frioul, #notre-dame-de-la-garde, #parc_longchamp
-    {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        height: 130px;
-    }
 }
