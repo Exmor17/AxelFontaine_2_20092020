@@ -151,6 +151,7 @@ form p i
     padding: 11px;
     margin-left: 0;
 }
+
 #filtres
 {
     display: flex;
@@ -461,8 +462,8 @@ footer
 {
     font-size: 12px;
     text-decoration: none;
+    text-align: center;
     font-style: normal;
-    justify-content: center;
     padding: 35px 0 15px 0;
     width: 50%;
     border-bottom: solid #F2F2F2 4px;
