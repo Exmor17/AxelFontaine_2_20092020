@@ -13,10 +13,6 @@
 {
 	font-family: "Raleway", sans-serif;
 }
-body
-{
-    margin: 0 15px 0 15px;
-}
 .content
 {
     margin-left: 2%;
@@ -39,7 +35,7 @@ h1
 	color: black; 
 	font-style: normal;
     font-weight: bold;
-	font-size: 20px;
+	font-size: 22px;
 	text-align: left;
 
 	width: 
@@ -51,13 +47,13 @@ h1
 h2
 {
 	color: black;
-	font-size: 15px;
+	font-size: 19px;
 	font-style: normal;
     font-weight: bold;
 }
 h3
 {
-    font-size: 12px;
+    font-size: 17px;
     font-style: normal;
     font-weight: bold;
 }
@@ -167,6 +163,13 @@ form p i
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 0 0 20px;
+}
+#filtres p
+{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
 }
 .filtres_list
 {
@@ -435,7 +438,8 @@ footer
     flex-direction: row;
     justify-content: flex-start;
 }
-@media screen and (max-width: 867px)
+
+@media screen and (max-width: 900px)
 {
     body
     {
@@ -517,14 +521,17 @@ footer
     {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin: 0 50px 0 25px;
     }
     .filtres_list
     {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     list-style: none;
+    padding:  0;
     }
     .total_hebergements
     {
@@ -634,6 +641,22 @@ footer
 {
     padding: 5px;
 }
+}
+@media screen and (max-width: 600)
+{
+    #filtres
+    {
+    display: flex;
+    flex-direction: column;
+    }
+    .filtres_list
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 15px 0 15px;
+    }
 }
 @media screen and (max-width: 465px)
 {
