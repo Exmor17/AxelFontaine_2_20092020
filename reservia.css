@@ -19,8 +19,8 @@ body
 }
 .content
 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 
     width: auto;
 }
@@ -167,7 +167,7 @@ form p i
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 0 20px;
+    margin: 0;
 }
 #filtres p
 {
@@ -492,9 +492,9 @@ footer
         order:  2;
         margin: 0 15px 0 0;
     }
-    #localite, .header_text
+    form, .header_text
     {
-        margin: 20px;
+        margin-left: 20px;
     }
     .bouton_recherche
     {
