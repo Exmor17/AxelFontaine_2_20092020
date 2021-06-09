@@ -91,7 +91,7 @@ nav
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin: 0;
+    margin-left:  auto;
     list-style: none;
 }
 .nav_list li 
@@ -435,7 +435,6 @@ footer
     flex-direction: row;
     justify-content: flex-start;
 }
-
 @media screen and (max-width: 867px)
 {
     body
@@ -490,6 +489,18 @@ footer
     .bouton_recherche
     {
         display: none;
+    }
+    .icone_recherche, #icone_recherche
+    {
+        display:  inline;
+    }
+    .icone_recherche, #icone_recherche
+    {
+        border: none;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding:  0;
+        margin:  0;
     }
     #icone_recherche
     {
@@ -568,11 +579,12 @@ footer
     .colonnes_activites
     {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 90%;
     height: 510px;
     margin: 0px;
-    width: 85%;
+    width: 30%;
     max-width: 350px;
     }
     .colonnes_activites:nth-child(1), .colonnes_activites:nth-child(3)
@@ -622,4 +634,37 @@ footer
 {
     padding: 5px;
 }
+}
+@media screen and (max-width: 465px)
+{
+    .articles_activites
+    {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;   
+    }
+    .colonnes_activites
+    {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 510px;
+    margin: 0px;
+    width: 85%;
+    max-width: 350px;
+    }
+    .colonnes_activites:nth-child(1), .colonnes_activites:nth-child(3)
+    {
+        height: 240px;
+    }
+    #vieux_port, #parc_national_des_calanques, #fort_de_pomegues, #iles_du_frioul, #notre-dame-de-la-garde, #parc_longchamp
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 240px;
+        width:  100%;
+    }
 }
