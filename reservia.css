@@ -240,7 +240,7 @@ form p i
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 .total_hebergements p
@@ -511,9 +511,9 @@ footer
     font-size: 1em;
     list-style: none;
 }
-footer:nth-child(2,3)
+.nav_footer:nth-child(2),.nav_footer:nth-child(3)
 {
-    margin-left: 100px;
+    margin-left: 200px;
 }
 .nav_footer ul li:nth-child(1)
 {
@@ -581,9 +581,9 @@ footer:nth-child(2,3)
     }
     .articles_hebergements a
     {
-        margin: 30px 0;
-        width: 50%;
-        max-width:  350px;
+        margin: 30px 2px;
+        width: 49%;
+        max-width: 350px;
     }
     #hebergements_populaires
     {
