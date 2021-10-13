@@ -451,7 +451,7 @@ form p i
 {
     display: flex;
     flex-direction: column;
-    
+    justify-content: flex-end;
 }
 .lien_grande_activite
 {
