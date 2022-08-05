@@ -21,7 +21,7 @@ body
 {
     justify-self: center;
     margin: auto;
-    padding: 0 20px 0 20px;
+    padding: 0 30px;
     box-sizing: border-box;
     max-width: 1450px;
 }
@@ -232,15 +232,19 @@ form p i
 }
 .fa.fa-info
 {
+    text-align: center;
     border: 2px solid #F2F2F2;
-    border-radius: 60px;
-    padding:  8px;
+    border-radius: 15px;
+    padding:  5px;
+    height: 15px;
+    width: 15px;
 }
 .total_hebergements
 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    column-gap: 20px;
     justify-content: space-between;
 }
 .total_hebergements p
@@ -253,9 +257,7 @@ form p i
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 10px; 
-    margin-right: 10px;
-
+    padding: 25px; 
     width: 70%;
 }
 .titre_hebergements
@@ -267,7 +269,7 @@ form p i
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .articles_hebergements a
@@ -322,7 +324,6 @@ form p i
 .afficher_plus
 {
     width: 98%;
-    margin: 10px auto;
 }
 .afficher_plus p
 {
@@ -338,8 +339,6 @@ form p i
 
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 20px;
     width: 30%; 
 }
@@ -360,11 +359,11 @@ form p i
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 85%;
 }
 .articles_hebergements_populaires a
 {
-    width: 340px;
-    max-width: 85%;
+    width: 100%;
     height: 140px;
     margin: 10px 0 10px 0;
 }
@@ -442,8 +441,8 @@ form p i
 {
     display: flex;
     flex-direction: column;
-
-    margin: 10px;
+    row-gap: 20px;
+    margin: 10px 0;
     width: 245px;
     height: 400px; 
 }
@@ -479,22 +478,18 @@ form p i
 }
 #fort_de_pomegues
 {
-    margin-bottom: 15px;
     height: 220px;
 }
 #iles_du_frioul
 {
-    margin-top: 15px;
     height: 160px;
 }
 #notre-dame-de-la-garde
 {
-    margin-bottom: 15px;
     height: 170px;
 }
 #parc_longchamp
 {
-    margin-top: 15px;
     height: 210px;
 }
 footer
